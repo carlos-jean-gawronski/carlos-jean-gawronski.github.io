@@ -18,3 +18,8 @@ body {
 body {
   font-size: 1.6rem;
 }
+
+hr {
+  width: 90%;
+  background-color: #9c9898;
+}
