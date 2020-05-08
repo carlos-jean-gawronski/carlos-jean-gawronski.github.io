@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FiGithub } from "react-icons/fi";
-
 import api from "../../services/api";
-
 import "./styles.css";
 
 export default function Repositories() {
