@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "./pages/Header";
 import Home from "./pages/Home";
+import Repositories from "./pages/Repositories";
 
 export default function Routes() {
   return (
@@ -11,7 +12,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/profile" component={() => <h1>Profile</h1>} />
-        <Route path="/projects" component={() => <h1>Projects</h1>} />
+        <Route path="/projects" component={Repositories} />
       </Switch>
     </BrowserRouter>
   );

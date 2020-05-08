@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FiGithub } from "react-icons/fi";
+import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 import "./styles.css";
 import api from "../../services/api";
 
 export default function Home() {
   const [user, setUser] = useState({});
-  const [repos, setRepos] = useState([]);
 
   async function loadGithub() {
     const res = await api.get("/users/carlos-jean-gawronski");
     setUser(res.data);
   }
 
-  async function loadRepos() {
-    const res = await api.get("/users/carlos-jean-gawronski/repos");
-    setRepos(res.data);
-  }
   useEffect(() => {
     loadGithub();
-    loadRepos();
   }, []);
 
   return (
@@ -54,7 +49,7 @@ export default function Home() {
               <p>ReactJS and React Native</p>
             </li>
             <li>
-              <p>Good with SQL databases</p>
+              <p>Good with SQL and NoSQL databases</p>
             </li>
             <li>
               <p>Learning Angular</p>
@@ -69,27 +64,54 @@ export default function Home() {
       <hr />
       <br />
 
-      <div className="repos">
-        <section>
-          <h1>Take a look at my repositories</h1>
-        </section>
-        <div className="repos-content">
-          {repos.map((repo) => (
-            <div className="repo-item" key={repo.id}>
-              <h1>{repo.name}</h1>
-              <div className="desc">
-                <p className="language">{repo.language}</p>
-                <p className="description">{repo.description}</p>
-              </div>
-              <div className="button">
-                <FiGithub size={20} color="#00ff1e" />
-                <a target="_blank" href={repo.svn_url} rel="noopener noreferrer">
-                  Go to Github
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="contact">
+        <h1>How to get in contact with me</h1>
+        <ul>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/carlos.jeangawronski"
+          >
+            <li>
+              <FaFacebookF size={20} color="#00F" />
+              <p>Facebook</p>
+            </li>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/CJ_Gawronski"
+          >
+            <li>
+              <FaTwitter size={20} color="##1E90FF" />
+              <p>Twitter</p>
+            </li>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/cj.gawronski/"
+          >
+            <li>
+              <FaInstagram size={20} color="#ffa64d" />
+              <p>Instagram</p>
+            </li>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/carlos-jean-gawronski"
+          >
+            <li>
+              <FaGithub size={20} color="#333" />
+              <p>Github</p>
+            </li>
+          </a>
+          <li className="mail">
+            <FiMail size={20} color="#ff4747" />
+            <p>gawronskicarlosjean@gmail.com</p>
+          </li>
+        </ul>
       </div>
       <br />
       <hr />

@@ -1,0 +1,74 @@
+div.content {
+  max-width: 100%;
+  width: 100%;
+}
+.repos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  width: 70%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+
+.repos h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+div.repo-item {
+  padding: 10px 20px;
+  background-color: rgb(245, 245, 245, 0.8);
+  border-radius: 10px;
+  margin: 10px;
+  color: #333;
+  transition: 0.3s;
+}
+
+div.repo-item:hover {
+  background-color: rgb(245, 245, 245, 1);
+}
+
+div.repo-item h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+p.language {
+  color: #ff8400;
+  margin-bottom: 5px;
+}
+
+p.description {
+  color: #444;
+  margin-bottom: 5px;
+}
+
+div.button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00ff1e;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+div.button a:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+div.button p {
+  margin-left: 5px;
+  color: #333;
+}
