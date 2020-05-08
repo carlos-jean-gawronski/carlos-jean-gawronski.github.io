@@ -19,8 +19,8 @@ export default function Repositories() {
 
   return (
     <div className="content">
+      <h1>My Repositories</h1>
       <div className="repos">
-        <h1>Take a look at my repositories</h1>
         <div className="repos-content">
           {repos.map((repo) => (
             <div className="repo-item" key={repo.id}>

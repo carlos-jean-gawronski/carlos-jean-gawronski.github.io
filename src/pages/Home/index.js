@@ -58,6 +58,9 @@ export default function Home() {
               <p>Good HTML 5 and CSS skills</p>
             </li>
           </ul>
+	<Link className="link" to="/projects">
+		Go to my repositories
+	</Link>
         </section>
       </div>
       <br />

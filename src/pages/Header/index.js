@@ -18,7 +18,9 @@ export default function Header() {
     <header>
       <div className="menu-icon">
         <AiOutlineCode size={40} color="#00fa9e" />
-        <Link to="/">Home</Link>
+        <Link className="brand" to="/">
+          Home
+        </Link>
       </div>
       <div className="bars" onClick={() => handleClick()}>
         <div className="menu-toggle">

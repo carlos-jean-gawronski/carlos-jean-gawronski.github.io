@@ -50,6 +50,9 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 540px) {
+  .brand {
+    font-size: 2rem;
+  }
   nav {
     display: none;
   }

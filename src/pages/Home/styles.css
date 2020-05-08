@@ -13,6 +13,7 @@ div.content {
   border-radius: 25px;
   background-color: #00ff66;
   text-decoration: none;
+  text-align: center;
   color: #fff;
   opacity: 0.7;
   font-size: 1.7rem;
@@ -52,6 +53,10 @@ div.about section.profile {
   color: #f5f5f5;
 }
 
+section.profile p {
+  font-size: 1.7rem;
+}
+
 div.intention {
   margin-top: 20px;
   padding: 20px;
@@ -89,7 +94,7 @@ div.about section.skills {
 }
 div.about section.skills h1 {
   text-align: center;
-  color: #00ff66;
+  color: #f5f5f5;
   margin-bottom: 10px;
 }
 
@@ -105,7 +110,7 @@ div.intention p {
 
 div.intention h2 {
   margin: 10px auto 15px;
-  color: #75ffac;
+  color: #f83f07;
   font-size: 2rem;
 }
 
@@ -125,11 +130,6 @@ div.intention h2 {
   }
   .mail {
     font-size: 1.2rem;
-  }
-}
-@media (max-width: 465px) {
-  div.intention {
-    margin: 20px auto 20px;
   }
 }
 
@@ -169,6 +169,23 @@ div.intention h2 {
   margin-left: 10px;
   color: #8c238a;
   text-decoration: none;
+  font-size: 2rem;
+}
+@media (max-width: 465px) {
+  div.intention {
+    margin: 20px auto 20px;
+  }
+  .contact ul li p {
+    font-size: 1.7rem !important;
+  }
+}
+@media (max-width: 465px) {
+  .contact ul li p {
+    font-size: 1.4rem !important;
+  }
+  section.skills h1 {
+    font-size: 2rem;
+  }
 }
 
 .contact ul a {
@@ -182,4 +199,8 @@ div.intention h2 {
 
 .mail {
   cursor: pointer;
+}
+
+div.intention p.description {
+  font-size: 1.7rem;
 }
