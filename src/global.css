@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500;1,600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,4 +19,14 @@ body {
 hr {
   width: 90%;
   background-color: #9c9898;
+  margin: 10px 0 0 10px;
+}
+
+p.gituser {
+  margin: 10px auto 10px;
+  background-color: #555;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 0 10px;
+  color: #f5f5f5;
 }

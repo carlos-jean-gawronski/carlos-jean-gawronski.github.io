@@ -16,6 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     loadGithub();
+    document.title = "Home";
   }, []);
 
   return (
@@ -58,9 +59,9 @@ export default function Home() {
               <p>Good HTML 5 and CSS skills</p>
             </li>
           </ul>
-	<Link className="link" to="/projects">
-		Go to my repositories
-	</Link>
+          <Link className="link" to="/projects">
+            Go to my repositories
+          </Link>
         </section>
       </div>
       <br />

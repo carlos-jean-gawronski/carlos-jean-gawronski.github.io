@@ -1,0 +1,78 @@
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+div.content-profile {
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  border-radius: 15px;
+  width: 60%;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+
+div.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+div.contact-profile {
+  border-radius: 0px;
+  background: none;
+}
+
+div.profile img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+div.contact-profile h1 {
+  color: #f5f5f5;
+}
+
+div.content-profile p {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  div.content-profile {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 630px) {
+  div.contact-profile h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 425px) {
+  div.profile h1 {
+    font-size: 2.6rem;
+  }
+}
+
+div.description p {
+  color: #23d400;
+  font-size: 1.8rem !important;
+}
+
+p.job {
+  margin: 10px 0 10px 0;
+  font-size: 2.4rem !important;
+  color: #f00 !important;
+  font-family: "Jost", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}

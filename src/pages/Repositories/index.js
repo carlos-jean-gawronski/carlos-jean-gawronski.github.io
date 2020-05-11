@@ -13,6 +13,7 @@ export default function Repositories() {
 
   useEffect(() => {
     loadRepos();
+    document.title = "Projects";
   }, []);
 
   return (
